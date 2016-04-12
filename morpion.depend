@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1459263288 source:c:\users\allan\documents\ingésup\poo\bachelor 2\poomorpion\poomorpion\main.cpp
+	<iostream>
+	"Joueur.h"
+	"Plateau.h"
+
+1459262317 c:\users\allan\documents\ingésup\poo\bachelor 2\poomorpion\poomorpion\include\joueur.h
+	<iostream>
+
+1459262158 c:\users\allan\documents\ingésup\poo\bachelor 2\poomorpion\poomorpion\include\plateau.h
+	<iostream>
+
+1459262599 source:c:\users\allan\documents\ingésup\poo\bachelor 2\poomorpion\poomorpion\src\joueur.cpp
+	<iostream>
+	"Joueur.h"
+
+1459262158 source:c:\users\allan\documents\ingésup\poo\bachelor 2\poomorpion\poomorpion\src\plateau.cpp
+	<iostream>
+	"Plateau.h"
+
