@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1459263288 source:c:\users\allan\documents\ingésup\poo\bachelor 2\poomorpion\poomorpion\main.cpp
+1459262594 source:c:\users\allan\documents\ingésup\poo\bachelor 2\poomorpion\poomorpion\main.cpp
 	<iostream>
 	"Joueur.h"
 	"Plateau.h"
@@ -17,4 +17,66 @@
 1459262158 source:c:\users\allan\documents\ingésup\poo\bachelor 2\poomorpion\poomorpion\src\plateau.cpp
 	<iostream>
 	"Plateau.h"
+
+1459265429 source:c:\users\ilith\downloads\poomorpion\main.cpp
+	<iostream>
+	"Joueur.h"
+	"Plateau.h"
+
+1459262160 source:c:\users\ilith\downloads\poomorpion\src\plateau.cpp
+	<iostream>
+	"Plateau.h"
+
+1459265226 source:c:\users\ilith\downloads\poomorpion\joueur.cpp
+	<iostream>
+	"Joueur.h"
+
+1459265429 c:\users\ilith\downloads\poomorpion\joueur.h
+	<iostream>
+
+1459264698 c:\users\ilith\downloads\poomorpion\plateau.h
+	<iostream>
+
+1459262160 source:c:\users\ilith\downloads\poomorpion\plateau.cpp
+	<iostream>
+	"Plateau.h"
+
+1460450535 source:c:\users\ilith\documents\ingésup\b2\pooa\poomorpion\joueur.cpp
+	<iostream>
+	"Joueur.h"
+
+1459265429 c:\users\ilith\documents\ingésup\b2\pooa\poomorpion\joueur.h
+	<iostream>
+
+1460450334 source:c:\users\ilith\documents\ingésup\b2\pooa\poomorpion\main.cpp
+	<iostream>
+	"Joueur.h"
+	"Plateau.h"
+
+1459264698 c:\users\ilith\documents\ingésup\b2\pooa\poomorpion\plateau.h
+	<iostream>
+
+1459262160 source:c:\users\ilith\documents\ingésup\b2\pooa\poomorpion\plateau.cpp
+	<iostream>
+	"Plateau.h"
+
+1461230605 source:c:\users\ilith\documents\ingesup\b_deux\pooa\poomorpion\joueur.cpp
+	<iostream>
+	"Joueur.h"
+
+1461227804 c:\users\ilith\documents\ingesup\b_deux\pooa\poomorpion\joueur.h
+	<iostream>
+
+1461227816 source:c:\users\ilith\documents\ingesup\b_deux\pooa\poomorpion\main.cpp
+	<iostream>
+	"Joueur.h"
+	"Plateau.h"
+
+1461227418 c:\users\ilith\documents\ingesup\b_deux\pooa\poomorpion\plateau.h
+	<iostream>
+
+1461228023 source:c:\users\ilith\documents\ingesup\b_deux\pooa\poomorpion\plateau.cpp
+	<iostream>
+	"Plateau.h"
+	"Joueur.h"
 
