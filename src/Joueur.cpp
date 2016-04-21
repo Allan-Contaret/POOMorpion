@@ -12,23 +12,8 @@ Joueur::~Joueur()
 {
     //dtor
 }
-
-void Joueur::tour_joueur()
-{
-    int choix;
-    int ligne = 0, colonne = 0;
-
-    if (tour == 'X')
-    {
-        cout << "     Tour d'Allan [X]: ";
-    }
-    if (tour == 'O')
-    {
-        cout << "     Tour d'Ivan [O]: ";
-    }
-    cin >> choix;
-
-    switch (choix)
+char Joueur::tab_choix(){
+switch (choix)
     {
         case 1: ligne = 0; colonne = 0; break;
         case 2: ligne = 0; colonne = 1; break;
@@ -43,8 +28,25 @@ void Joueur::tour_joueur()
             cout << "Mauvais chiffre rentre! Recommence\n";
         tour_joueur();
     }
+}
+void Joueur::tour_joueur()
+{
 
-    if (tour == 'X' && tableau[ligne][colonne] != 'X' && tableau[ligne][colonne] != 'O'){
+
+    if (tour == 'X')
+    {
+        cout << "     Tour d'Allan [X]: ";
+    }
+    if (tour == 'O')
+    {
+        cout << "     Tour d'Ivan [O]: ";
+    }
+    cin >> choix;
+    tab_choix();
+
+
+
+    if (tour == 'X' && tableau[ligne][colonne] != 'X' && tableau[ligne][colonne] != 'O'){ // vérification si la case est vide
         tableau[ligne][colonne] = 'X';
         tour = 'O';
     } else if (tour == 'O' && tableau[ligne][colonne] != 'X' && tableau[ligne][colonne] != 'O') {

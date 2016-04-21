@@ -40,7 +40,7 @@ int main()
 
         while (!fin_jeu())
         {
-            plateau.lancement_plateau();
+            plateau.lancement_plateau(player);
             player.tour_joueur();
             fin_jeu();
         }
@@ -48,17 +48,17 @@ int main()
 
         if (player.tour == 'O' && !egalite)
         {
-            plateau.lancement_plateau();
+            plateau.lancement_plateau(player);
             cout << endl << endl << "Allan Gagne! Ivan : T'es nul!\n";
         }
         else if (player.tour == 'X' && !egalite)
         {
-            plateau.lancement_plateau();
+            plateau.lancement_plateau(player);
             cout << endl << endl << "Ivan Gagne! Allan : T'es nul!\n";
         }
         else
         {
-            plateau.lancement_plateau();
+            plateau.lancement_plateau(player);
             cout << endl << endl << "Egalite! Game Over!\n";
         }
     }
@@ -69,16 +69,18 @@ int main()
 
 bool fin_jeu()
 {
-    for (int i = 0; i < 3; i++)//Check for a win
+    for (int i = 0; i < 3; i++) // vérification pour la victoire
     {
-        if ((player.tableau[i][0] == player.tableau[i][1] && player.tableau[i][1] == player.tableau[i][2]) || (player.tableau[0][i] == player.tableau[1][i] && player.tableau[1][i] == player.tableau[2][i]) ||
-            (player.tableau[0][0] == player.tableau[1][1] && player.tableau[1][1] == player.tableau[2][2]) || (player.tableau[0][2] == player.tableau[1][1] && player.tableau[1][1] == player.tableau[2][0]))
+        if ((player.tableau[i][0] == player.tableau[i][1] && player.tableau[i][1] == player.tableau[i][2]) || (player.tableau[0][i] == player.tableau[1][i] &&
+                                                                                                                player.tableau[1][i] == player.tableau[2][i]) ||
+            (player.tableau[0][0] == player.tableau[1][1] && player.tableau[1][1] == player.tableau[2][2]) || (player.tableau[0][2] == player.tableau[1][1] &&
+                                                                                                                player.tableau[1][1] == player.tableau[2][0]))
         {
             return true;
         }
     }
 
-    for (int i = 0; i < 3; i++)//Check for egalite
+    for (int i = 0; i < 3; i++) // véfication pour l'égalité
     {
         for (int j = 0; j < 3; j++)
         {

@@ -4,7 +4,6 @@
 
 using namespace std;
 
-Joueur joueur;
 
 Plateau::Plateau()
 {
@@ -16,7 +15,7 @@ Plateau::~Plateau()
     //dtor
 }
 
-void Plateau::lancement_plateau()
+void Plateau::lancement_plateau(Joueur joueur)
 {
     cout << "--------------------------" << endl;
     cout << "          |     |     " << endl;

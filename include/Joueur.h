@@ -14,6 +14,10 @@ class Joueur
         char tour = 'X';
 
     private:
+        char tab_choix();
+        int choix;
+        int ligne = 0;
+        int colonne = 0;
 };
 
 #endif // JOUEUR_H
