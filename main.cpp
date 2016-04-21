@@ -11,12 +11,10 @@ Plateau plateau;
 // initialisation des variables et du tableau
 
 bool egalite = false;
-char tableau[3][3] = {{'1', '2', '3'}, {'4', '5', '6'}, {'7', '8', '9'}};
-char tour;
+
 int main()
 {
     char choix[1];
-    cout << "-----------------------------------------------------------------------------" << endl;
     cout << "        Bienvenue dans le petit jeu morpion code par Ivan et Allan" << endl;
     cout << "-----------------------------------------------------------------------------" << endl;
     cout << "           1 - Appuyez sur 0 et entrer pour arreter le jeu" << endl;
@@ -39,7 +37,6 @@ int main()
     } else if(choix[0] == '1'){
         cout << "          Morpion\n";
         cout << "Allan [X]   VS   Ivan [O]\n";
-        tour = 'X';
 
         while (!fin_jeu())
         {
@@ -49,12 +46,12 @@ int main()
         }
 
 
-        if (tour == 'O' && !egalite)
+        if (player.tour == 'O' && !egalite)
         {
             plateau.lancement_plateau();
             cout << endl << endl << "Allan Gagne! Ivan : T'es nul!\n";
         }
-        else if (tour == 'X' && !egalite)
+        else if (player.tour == 'X' && !egalite)
         {
             plateau.lancement_plateau();
             cout << endl << endl << "Ivan Gagne! Allan : T'es nul!\n";
@@ -74,7 +71,8 @@ bool fin_jeu()
 {
     for (int i = 0; i < 3; i++)//Check for a win
     {
-        if ((tableau[i][0] == tableau[i][1] && tableau[i][1] == tableau[i][2]) || (tableau[0][i] == tableau[1][i] && tableau[1][i] == tableau[2][i]) || (tableau[0][0] == tableau[1][1] && tableau[1][1] == tableau[2][2]) || (tableau[0][2] == tableau[1][1] && tableau[1][1] == tableau[2][0]))
+        if ((player.tableau[i][0] == player.tableau[i][1] && player.tableau[i][1] == player.tableau[i][2]) || (player.tableau[0][i] == player.tableau[1][i] && player.tableau[1][i] == player.tableau[2][i]) ||
+            (player.tableau[0][0] == player.tableau[1][1] && player.tableau[1][1] == player.tableau[2][2]) || (player.tableau[0][2] == player.tableau[1][1] && player.tableau[1][1] == player.tableau[2][0]))
         {
             return true;
         }
@@ -84,7 +82,7 @@ bool fin_jeu()
     {
         for (int j = 0; j < 3; j++)
         {
-            if (tableau[i][j] != 'X' && tableau[i][j] != 'O')
+            if (player.tableau[i][j] != 'X' && player.tableau[i][j] != 'O')
             {
                 return false;
             }
